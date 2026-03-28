@@ -21,7 +21,7 @@ static bool OS_createTasks()
     uint8_t taskIndex;
     for(taskIndex = 0; taskIndex < MAX_TASKS; taskIndex++)
     {
-        xTaskCreate(myTasks[taskIndex].function, myTasks[taskIndex].name, myTasks[taskIndex].stackSize, NULL, myTasks[taskIndex].frequency, NULL);
+        xTaskCreate(myTasks[taskIndex].function, myTasks[taskIndex].name, myTasks[taskIndex].stackSize, NULL, myTasks[taskIndex].priority, NULL);
     }
     return true;
 }

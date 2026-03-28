@@ -11,7 +11,7 @@ typedef struct
     void (*function)(void *arg);
     char name[40];
     uint32_t stackSize;
-    uint32_t frequency;
+    uint32_t priority;
 } task_t;
 
 bool OS_init();
