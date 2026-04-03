@@ -1,3 +1,3 @@
 idf_component_register(SRCS "main.c" 
-                       INCLUDE_DIRS "../demo/inc"
-                       REQUIRES demo)
+                       INCLUDE_DIRS "../OS/inc"
+                       REQUIRES demo OS uart)
