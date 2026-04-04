@@ -19,7 +19,7 @@ bool UART_init(void)
 bool UART_read(uint8_t *buffer, uint32_t *length)
 {
     uart_event_t event;
-    if(buffer == NULL || length == 0)
+    if(buffer == NULL || length == NULL)
     {
         return false; // Return false if buffer is null or length is zero
     }
