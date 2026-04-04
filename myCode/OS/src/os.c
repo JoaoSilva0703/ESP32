@@ -8,7 +8,8 @@ static bool OS_createTasks();
 
 task_t myTasks[MAX_TASKS] = {
     //Function pointer, name, stack size, priority
-    {DEMO_job, "DEMO Task", 4096, 5}
+    {DEMO_handlerJob, "DEMO Task", 2048, 5},
+    {DEMO_uartJob, "UART Task", 2048, 5}
 };
 
 bool OS_init()

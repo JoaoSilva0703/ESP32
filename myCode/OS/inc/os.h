@@ -3,6 +3,7 @@
 typedef enum
 {
     DEMO_TASK,
+    UART_TASK,
     MAX_TASKS
 }tasksName_t;
 
